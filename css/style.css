@@ -1,0 +1,395 @@
+/* Style Terpusat Karang Taruna Kecamatan Baula */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --primary-red: #D32F2F;
+    --primary-yellow: #FBC02D;
+    --cream: #FFF8E1;
+    --white: #FFFFFF;
+    --text-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-red);
+    color: var(--white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.brand-sub {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--cream);
+    text-transform: uppercase;
+}
+
+.brand-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--white);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-yellow);
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    min-height: 70vh;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: var(--cream);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* Card Style for Pengurus */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--cream);
+    border: 1px solid var(--primary-yellow);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    fill: var(--primary-red);
+}
+
+/* Structure Box */
+.structure-box {
+    border: 2px solid var(--primary-red);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: var(--cream);
+    text-align: center;
+}
+
+.contact-info {
+    background-color: var(--cream);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-red);
+}
+
+/* Halaman Kegiatan */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.activity-card {
+    background-color: var(--white);
+    border: 1px solid #E0E0E0;
+    border-top: 4px solid var(--primary-red);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.activity-img-placeholder {
+    height: 180px;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dashed #DDD;
+    padding: 15px;
+    text-align: center;
+}
+
+.activity-img-placeholder svg {
+    width: 48px;
+    height: 48px;
+    fill: var(--primary-yellow);
+    margin-bottom: 8px;
+}
+
+.activity-img-placeholder span {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #777777;
+}
+
+.activity-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.activity-badge {
+    align-self: flex-start;
+    background-color: var(--cream);
+    color: var(--primary-red);
+    border: 1px solid var(--primary-yellow);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.activity-content h3 {
+    font-size: 1.25rem;
+    color: var(--primary-red);
+    margin-bottom: 10px;
+}
+
+.activity-meta {
+    font-size: 0.9rem;
+    color: #555555;
+    background-color: #FAFAFA;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border-left: 3px solid var(--primary-yellow);
+}
+
+.activity-meta p {
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.activity-meta p:last-child {
+    margin-bottom: 0;
+}
+
+.activity-desc {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border: 2px solid var(--primary-red);
+}
+
+.btn-primary:hover {
+    background-color: #B71C1C;
+    border-color: #B71C1C;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(211, 47, 47, 0.25);
+}
+
+.btn-secondary {
+    background-color: var(--primary-yellow);
+    color: #422006;
+    border: 2px solid var(--primary-yellow);
+}
+
+.btn-secondary:hover {
+    background-color: #F9A825;
+    border-color: #F9A825;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(251, 192, 45, 0.35);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-red);
+    border: 2px solid var(--primary-red);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-red);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.05) 0%, rgba(251, 192, 45, 0.1) 100%), var(--cream);
+    border: 2px solid var(--primary-yellow);
+    border-radius: 12px;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    color: var(--primary-red);
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Header & Halaman Responsif */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .brand-text {
+        text-align: left;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+}
+
+
